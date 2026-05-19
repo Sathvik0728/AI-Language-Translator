@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        AI Language Translator
+    </title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div class="header-left">
+
+            <img
+            src="{{ url_for('static', filename='images/google.png') }}"
+            class="logo">
+
+            <div>
+
+                <h1 id="mainTitle">
+
+                    AI Language Translator
+
+                </h1>
+
+                <p id="mainSubtitle">
+
+                    Translate text, voice and more with AI
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT HEADER -->
+
+        <div class="header-right">
+
+            <!-- DARK MODE -->
+
+            <button
+            class="top-btn"
+            id="themeBtn">
+
+                ☀️ Light Mode
+
+            </button>
+
+
+
+            <!-- WEBSITE LANGUAGE -->
+
+            <select
+            class="top-btn"
+            id="websiteLanguage"
+            onchange="changeWebsiteLanguage()">
+
+                <option value="en">
+
+                    🌐 English
+
+                </option>
+
+                <option value="te">
+
+                    🌐 తెలుగు
+
+                </option>
+
+                <option value="hi">
+
+                    🌐 हिन्दी
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TRANSLATOR -->
+
+    <div class="translator">
+
+        <!-- LEFT CARD -->
+
+        <div class="card">
+
+            <h3 id="sourceTitle">
+
+                Source Language
+
+            </h3>
+
+            <select id="sourceLanguage"></select>
+
+            <div class="textarea-box">
+
+                <!-- INPUT -->
+
+                <textarea
+                id="inputText"
+                placeholder="Enter text"></textarea>
+
+
+
+                <!-- CLEAR -->
+
+                <button
+                class="clear-btn"
+                onclick="clearText()">
+
+                    ✕
+
+                </button>
+
+
+
+                <!-- MIC -->
+
+                <button
+                class="mic-btn"
+                onclick="startVoice()">
+
+                    🎤
+
+                </button>
+
+
+
+                <!-- COUNTER -->
+
+                <div class="counter">
+
+                    <span id="charCount">
+
+                        0
+
+                    </span>/500
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SWAP -->
+
+        <button
+        class="swap-btn"
+        onclick="swapLanguages()">
+
+            ⇄
+
+        </button>
+
+
+
+        <!-- RIGHT CARD -->
+
+        <div class="card">
+
+            <h3 id="targetTitle">
+
+                Target Language
+
+            </h3>
+
+            <select id="targetLanguage"></select>
+
+            <div class="textarea-box">
+
+                <!-- OUTPUT -->
+
+                <textarea
+                id="outputText"
+                placeholder="Translation"
+                readonly></textarea>
+
+
+
+                <!-- ACTIONS -->
+
+                <div class="right-actions">
+
+                    <!-- SPEAK -->
+
+                    <button
+                    onclick="speakTranslation()">
+
+                        🔊
+
+                    </button>
+
+
+
+                    <!-- COPY -->
+
+                    <button
+                    onclick="copyText()">
+
+                        📋
+
+                    </button>
+
+
+
+                    <!-- SHARE -->
+
+                    <button
+                    onclick="shareText()">
+
+                        🔗
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- TRANSLATED -->
+
+                <div
+                class="translated"
+                id="translatedBox">
+
+                    ✅ Translated
+
+                </div>
+
+
+
+                <!-- COUNTER -->
+
+                <div class="counter">
+
+                    <span id="outputCount">
+
+                        0
+
+                    </span>/500
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TRANSLATE BUTTON -->
+
+    <div class="translate-area">
+
+        <button
+        class="translate-btn"
+        id="translateBtn"
+        onclick="translateText()">
+
+            ✨ Translate
+
+        </button>
+
+    </div>
+
+
+
+    <!-- BOTTOM BUTTONS -->
+
+    <div class="bottom-buttons">
+
+        <button onclick="startVoice()">
+
+            🎤 Voice Input
+
+        </button>
+
+        <button onclick="speakTranslation()">
+
+            🔊 Speak Output
+
+        </button>
+
+        <button onclick="copyText()">
+
+            📋 Copy Text
+
+        </button>
+
+        <button onclick="swapLanguages()">
+
+            ⇄ Swap Languages
+
+        </button>
+
+        <button onclick="clearText()">
+
+            🗑 Clear Text
+
+        </button>
+
+    </div>
+
+
+
+    <!-- POWERED -->
+
+    <div class="powered">
+
+        <div class="powered-left">
+
+            <div class="ai-box">
+
+                AI
+
+            </div>
+
+            <div>
+
+                <h2>
+
+                    Powered by AI
+
+                </h2>
+
+                <p>
+
+                    Our advanced AI model delivers
+                    accurate and context-aware translations.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- SCRIPT -->
+
+<script
+src="{{ url_for('static', filename='script.js') }}">
+</script>
+
+</body>
+
+</html>
