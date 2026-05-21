@@ -668,7 +668,7 @@ textarea::placeholder{
 
 
 /* ======================================== */
-/* MOBILE VIEW FIX */
+/* PERFECT MOBILE VIEW */
 /* ======================================== */
 
 @media screen and (max-width:768px){
@@ -697,7 +697,7 @@ textarea::placeholder{
 
         align-items:flex-start;
 
-        gap:18px;
+        gap:14px;
     }
 
     .header-left{
@@ -706,24 +706,24 @@ textarea::placeholder{
 
         align-items:center;
 
-        gap:14px;
+        gap:12px;
     }
 
     .logo{
 
-        width:55px;
+        width:52px;
     }
 
     .header-left h1{
 
-        font-size:32px;
+        font-size:28px;
 
         line-height:1.1;
     }
 
     .header-left p{
 
-        font-size:15px;
+        font-size:14px;
     }
 
     .header-right{
@@ -732,16 +732,18 @@ textarea::placeholder{
 
         display:flex;
 
-        gap:12px;
+        gap:10px;
     }
 
     .top-btn{
 
         flex:1;
 
-        height:56px;
+        height:52px;
 
-        font-size:16px;
+        font-size:15px;
+
+        border-radius:14px;
     }
 
     /* TRANSLATOR */
@@ -752,7 +754,7 @@ textarea::placeholder{
 
         flex-direction:column;
 
-        gap:18px;
+        gap:16px;
     }
 
     .card{
@@ -760,11 +762,13 @@ textarea::placeholder{
         width:100%;
 
         padding:18px;
+
+        border-radius:20px;
     }
 
     .card h3{
 
-        font-size:18px;
+        font-size:17px;
 
         margin-bottom:14px;
     }
@@ -773,29 +777,33 @@ textarea::placeholder{
 
         width:100%;
 
-        height:56px;
+        height:52px;
 
-        font-size:17px;
+        font-size:16px;
+
+        border-radius:14px;
     }
+
+    /* TEXTAREA */
 
     .textarea-box{
 
-        width:100%;
-
         position:relative;
+
+        width:100%;
     }
 
     textarea{
 
         width:100%;
 
-        height:240px;
+        height:180px;
 
-        font-size:18px;
+        font-size:16px;
 
-        padding:22px 18px;
+        padding:18px;
 
-        border-radius:20px;
+        border-radius:18px;
     }
 
     .clear-btn{
@@ -803,11 +811,31 @@ textarea::placeholder{
         top:14px;
 
         right:14px;
+
+        font-size:20px;
+    }
+
+    .mic-btn{
+
+        width:42px;
+
+        height:42px;
+
+        left:14px;
+
+        bottom:14px;
+    }
+
+    .counter{
+
+        right:14px;
+
+        bottom:14px;
+
+        font-size:13px;
     }
 
     .right-actions{
-
-        position:absolute;
 
         top:14px;
 
@@ -820,31 +848,11 @@ textarea::placeholder{
 
     .right-actions button{
 
-        width:42px;
+        width:38px;
 
-        height:42px;
+        height:38px;
 
-        font-size:16px;
-    }
-
-    .mic-btn{
-
-        width:45px;
-
-        height:45px;
-
-        bottom:14px;
-
-        left:14px;
-    }
-
-    .counter{
-
-        bottom:14px;
-
-        right:14px;
-
-        font-size:14px;
+        font-size:15px;
     }
 
     .translated{
@@ -853,38 +861,38 @@ textarea::placeholder{
 
         bottom:14px;
 
-        font-size:13px;
+        font-size:12px;
     }
 
-    /* SWAP */
+    /* SWAP BUTTON */
 
     .swap-btn{
 
-        width:65px;
+        width:58px;
 
-        height:65px;
+        height:58px;
+
+        font-size:24px;
 
         margin:auto;
-
-        font-size:28px;
     }
 
-    /* TRANSLATE */
+    /* TRANSLATE BUTTON */
 
     .translate-area{
 
-        margin-top:22px;
+        margin-top:18px;
     }
 
     .translate-btn{
 
         width:100%;
 
-        height:65px;
+        height:58px;
 
-        font-size:26px;
+        font-size:22px;
 
-        border-radius:20px;
+        border-radius:18px;
     }
 
     /* BOTTOM BUTTONS */
@@ -895,27 +903,31 @@ textarea::placeholder{
 
         grid-template-columns:1fr 1fr;
 
-        gap:12px;
+        gap:10px;
 
-        margin-top:22px;
+        margin-top:18px;
     }
 
     .bottom-buttons button{
 
         width:100%;
 
-        height:58px;
+        height:52px;
 
-        font-size:16px;
+        font-size:14px;
+
+        border-radius:14px;
     }
 
     /* POWERED */
 
     .powered{
 
-        margin-top:22px;
+        margin-top:20px;
 
-        padding:18px;
+        padding:16px;
+
+        border-radius:18px;
     }
 
     .powered-left{
@@ -924,26 +936,26 @@ textarea::placeholder{
 
         align-items:flex-start;
 
-        gap:14px;
+        gap:12px;
     }
 
     .ai-box{
 
-        width:55px;
+        width:48px;
 
-        height:55px;
+        height:48px;
 
-        font-size:22px;
+        font-size:20px;
     }
 
     .powered h2{
 
-        font-size:24px;
+        font-size:22px;
     }
 
     .powered p{
 
-        font-size:14px;
+        font-size:13px;
 
         line-height:1.5;
     }
