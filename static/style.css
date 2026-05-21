@@ -750,196 +750,208 @@ textarea::placeholder{
     }
 
 
-/* ======================================== */
-/* MOBILE TRANSLATOR */
-/* ======================================== */
+    /* ======================================== */
+    /* TRANSLATOR */
+    /* ======================================== */
 
-.translator{
+    .translator{
 
-    display:flex;
+        display:flex;
 
-    flex-direction:column;
+        flex-direction:column;
 
-    gap:12px;
+        gap:14px;
 
-    width:100%;
-}
+        width:100%;
+    }
 
 
-/* CARDS */
+    /* CARD */
 
-.card{
+    .card{
 
-    width:100%;
+        width:100%;
 
-    padding:12px;
+        padding:12px;
 
-    border-radius:18px;
-}
+        border-radius:18px;
+    }
 
 
-/* HEADINGS */
+    /* HEADINGS */
 
-.card h3{
+    .card h3{
 
-    font-size:16px;
+        font-size:16px;
 
-    margin-bottom:10px;
-}
+        margin-bottom:10px;
+    }
 
 
-/* SELECT */
+    /* SELECT */
 
-select{
+    select{
 
-    width:100%;
+        width:100%;
 
-    height:46px;
+        height:46px;
 
-    font-size:14px;
+        font-size:14px;
 
-    padding:0 12px;
+        padding:0 12px;
 
-    border-radius:12px;
-}
+        border-radius:12px;
+    }
 
 
-/* TEXTAREA */
+    /* TEXTAREA BOX */
 
-textarea{
+    .textarea-box{
 
-    width:100%;
+        position:relative;
 
-    height:150px;
+        width:100%;
 
-    font-size:14px;
+        margin-top:10px;
+    }
 
-    padding:46px 12px 12px 12px;
 
-    border-radius:16px;
+    /* TEXTAREA */
 
-    line-height:1.5;
-}
+    textarea{
 
+        width:100%;
 
-/* SWAP BUTTON */
+        height:150px;
 
-.swap-btn{
+        font-size:14px;
 
-    width:50px;
+        padding:46px 12px 12px 12px;
 
-    height:50px;
+        border-radius:16px;
 
-    font-size:22px;
-
-    margin:0 auto;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-}
-
-
-/* MIC BUTTON */
-
-.mic-btn{
-
-    width:34px;
-
-    height:34px;
-
-    left:8px;
-
-    bottom:8px;
-
-    font-size:13px;
-}
-
-
-/* CLEAR BUTTON */
-
-.clear-btn{
-
-    top:8px;
-
-    right:8px;
-
-    font-size:18px;
-}
-
-
-/* RIGHT ACTIONS */
-
-.right-actions{
-
-    position:absolute;
-
-    top:8px;
-
-    right:8px;
-
-    display:flex;
-
-    gap:5px;
-}
-
-.right-actions button{
-
-    width:30px;
-
-    height:30px;
-
-    font-size:12px;
-
-    border-radius:8px;
-}
-
-
-/* COUNTER */
-
-.counter{
-
-    font-size:11px;
-
-    right:8px;
-
-    bottom:8px;
-}
-
-
-/* TRANSLATED LABEL */
-
-.translated{
-
-    left:8px;
-
-    bottom:8px;
-
-    font-size:10px;
-
-    padding:4px 8px;
-}
+        line-height:1.5;
+    }
 
 
     /* SWAP BUTTON */
 
     .swap-btn{
 
-        width:55px;
+        width:50px;
 
-        height:55px;
+        height:50px;
 
-        min-width:55px;
+        font-size:22px;
 
-        min-height:55px;
+        margin:0 auto;
 
-        margin-top:170px;
+        display:flex;
 
-        flex-shrink:0;
+        align-items:center;
 
-        font-size:24px;
+        justify-content:center;
+
+        position:static !important;
+    }
+
+
+    /* REMOVE EXTRA SPACE */
+
+    .translator > *{
+
+        margin-top:0 !important;
+
+        margin-bottom:0 !important;
+    }
+
+
+    /* MIC BUTTON */
+
+    .mic-btn{
+
+        position:absolute;
+
+        width:34px;
+
+        height:34px;
+
+        left:8px;
+
+        bottom:8px;
+
+        font-size:13px;
+    }
+
+
+    /* CLEAR BUTTON */
+
+    .clear-btn{
+
+        position:absolute;
+
+        top:8px;
+
+        right:8px;
+
+        font-size:18px;
+    }
+
+
+    /* RIGHT ACTIONS */
+
+    .right-actions{
+
+        position:absolute;
+
+        top:8px;
+
+        right:8px;
+
+        display:flex;
+
+        gap:5px;
+    }
+
+    .right-actions button{
+
+        width:30px;
+
+        height:30px;
+
+        font-size:12px;
+
+        border-radius:8px;
+    }
+
+
+    /* COUNTER */
+
+    .counter{
+
+        position:absolute;
+
+        font-size:11px;
+
+        right:8px;
+
+        bottom:8px;
+    }
+
+
+    /* TRANSLATED LABEL */
+
+    .translated{
+
+        position:absolute;
+
+        left:8px;
+
+        bottom:8px;
+
+        font-size:10px;
+
+        padding:4px 8px;
     }
 
 
