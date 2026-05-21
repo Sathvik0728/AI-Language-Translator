@@ -750,49 +750,39 @@ textarea::placeholder{
     }
 
 
- /* ======================================== */
-/* MOBILE TRANSLATOR FIX */
+/* ======================================== */
+/* MOBILE TRANSLATOR */
 /* ======================================== */
 
 .translator{
 
     display:flex;
 
-    flex-direction:row;
+    flex-direction:column;
 
-    align-items:center;
-
-    justify-content:center;
-
-    gap:8px;
+    gap:14px;
 
     width:100%;
 }
 
 
-/* LEFT + RIGHT BOX */
+/* CARDS */
 
 .card{
 
-    flex:1;
-
     width:100%;
 
-    min-width:0;
-
-    padding:10px;
+    padding:12px;
 
     border-radius:18px;
 }
 
 
-/* HEADING */
+/* HEADINGS */
 
 .card h3{
 
-    font-size:15px;
-
-    line-height:1.3;
+    font-size:16px;
 
     margin-bottom:10px;
 }
@@ -808,7 +798,9 @@ select{
 
     font-size:14px;
 
-    padding:0 10px;
+    padding:0 12px;
+
+    border-radius:12px;
 }
 
 
@@ -818,13 +810,15 @@ textarea{
 
     width:100%;
 
-    height:160px;
+    height:140px;
 
     font-size:14px;
 
-    padding:50px 14px 14px 14px;
-    
-    line-height:1.4;
+    padding:48px 12px 12px 12px;
+
+    border-radius:16px;
+
+    line-height:1.5;
 }
 
 
@@ -832,15 +826,13 @@ textarea{
 
 .swap-btn{
 
-    width:48px;
+    width:50px;
 
-    height:48px;
-
-    min-width:48px;
+    height:50px;
 
     font-size:22px;
 
-    margin-top:70px;
+    margin:auto;
 }
 
 
@@ -852,11 +844,11 @@ textarea{
 
     height:34px;
 
-    font-size:14px;
-
     left:8px;
 
     bottom:8px;
+
+    font-size:13px;
 }
 
 
@@ -868,11 +860,11 @@ textarea{
 
     right:8px;
 
-    font-size:16px;
+    font-size:18px;
 }
 
 
-/* RIGHT ACTION BUTTONS */
+/* RIGHT ACTIONS */
 
 .right-actions{
 
@@ -885,8 +877,6 @@ textarea{
     display:flex;
 
     gap:5px;
-
-    z-index:10;
 }
 
 .right-actions button{
@@ -897,9 +887,7 @@ textarea{
 
     font-size:12px;
 
-    padding:0;
-
-    border-radius:10px;
+    border-radius:8px;
 }
 
 
