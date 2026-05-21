@@ -668,349 +668,171 @@ textarea::placeholder{
 
 
 /* ======================================== */
-/* PERFECT MOBILE VIEW */
+/* MOBILE TRANSLATOR FIX */
 /* ======================================== */
 
-@media screen and (max-width:768px){
+.translator{
 
-    body{
+    display:flex;
 
-        padding:10px;
+    flex-direction:row;
 
-        overflow-x:hidden;
-    }
+    align-items:center;
 
-    .container{
+    justify-content:center;
 
-        width:100%;
+    gap:8px;
 
-        padding:16px;
+    width:100%;
+}
 
-        border-radius:20px;
-    }
 
+/* LEFT + RIGHT BOX */
 
-    /* HEADER */
+.card{
 
-    .header{
+    flex:1;
 
-        display:flex;
+    width:100%;
 
-        flex-direction:column;
+    min-width:0;
 
-        align-items:flex-start;
+    padding:10px;
 
-        gap:14px;
-    }
+    border-radius:18px;
+}
 
-    .header-left{
 
-        display:flex;
+/* HEADING */
 
-        align-items:center;
+.card h3{
 
-        gap:12px;
-    }
+    font-size:15px;
 
-    .logo{
+    line-height:1.3;
 
-        width:52px;
-    }
+    margin-bottom:10px;
+}
 
-    .header-left h1{
 
-        font-size:28px;
+/* SELECT */
 
-        line-height:1.1;
-    }
+select{
 
-    .header-left p{
+    width:100%;
 
-        font-size:14px;
-    }
+    height:46px;
 
-    .header-right{
+    font-size:14px;
 
-        width:100%;
+    padding:0 10px;
+}
 
-        display:flex;
 
-        gap:10px;
-    }
+/* TEXTAREA */
 
-    .top-btn{
+textarea{
 
-        flex:1;
+    width:100%;
 
-        height:52px;
+    height:160px;
 
-        font-size:15px;
+    font-size:14px;
 
-        border-radius:14px;
-    }
+    padding:14px;
 
+    line-height:1.4;
+}
 
-    /* TRANSLATOR */
 
-    .translator{
+/* SWAP BUTTON */
 
-        display:flex;
+.swap-btn{
 
-        flex-direction:row;
+    width:48px;
 
-        align-items:flex-start;
+    height:48px;
 
-        justify-content:space-between;
+    min-width:48px;
 
-        gap:10px;
+    font-size:22px;
 
-        width:100%;
-    }
+    margin-top:70px;
+}
 
 
-    /* CARDS */
+/* MIC BUTTON */
 
-    .card{
+.mic-btn{
 
-        width:calc(50% - 35px);
+    width:34px;
 
-        min-width:0;
+    height:34px;
 
-        padding:12px;
+    font-size:14px;
 
-        border-radius:18px;
-    }
+    left:8px;
 
-    .card h3{
+    bottom:8px;
+}
 
-        font-size:16px;
 
-        margin-bottom:12px;
+/* CLEAR BUTTON */
 
-        line-height:1.3;
-    }
+.clear-btn{
 
+    top:8px;
 
-    /* SELECT */
+    right:8px;
 
-    select{
+    font-size:16px;
+}
 
-        width:100%;
 
-        height:50px;
+/* RIGHT ACTIONS */
 
-        font-size:15px;
+.right-actions{
 
-        border-radius:14px;
-    }
+    top:8px;
 
+    right:8px;
 
-    /* TEXTAREA */
+    gap:4px;
+}
 
-    .textarea-box{
+.right-actions button{
 
-        position:relative;
+    width:30px;
 
-        width:100%;
-    }
+    height:30px;
 
-    textarea{
+    font-size:12px;
 
-        width:100%;
+    padding:0;
+}
 
-        height:170px;
 
-        font-size:15px;
+/* COUNTER */
 
-        padding:16px;
+.counter{
 
-        border-radius:18px;
+    font-size:11px;
 
-        line-height:1.4;
-    }
+    right:8px;
 
+    bottom:8px;
+}
 
-    /* CLEAR BUTTON */
 
-    .clear-btn{
+/* TRANSLATED LABEL */
 
-        position:absolute;
+.translated{
 
-        top:12px;
+    left:8px;
 
-        right:12px;
+    bottom:8px;
 
-        font-size:18px;
-    }
+    font-size:10px;
 
-
-    /* MIC BUTTON */
-
-    .mic-btn{
-
-        width:38px;
-
-        height:38px;
-
-        left:10px;
-
-        bottom:10px;
-
-        font-size:15px;
-    }
-
-
-    /* COUNTER */
-
-    .counter{
-
-        right:10px;
-
-        bottom:10px;
-
-        font-size:12px;
-    }
-
-
-    /* RIGHT ACTIONS */
-
-    .right-actions{
-
-        position:absolute;
-
-        top:10px;
-
-        right:10px;
-
-        display:flex;
-
-        gap:6px;
-    }
-
-    .right-actions button{
-
-        width:34px;
-
-        height:34px;
-
-        font-size:13px;
-    }
-
-
-    /* TRANSLATED LABEL */
-
-    .translated{
-
-        left:10px;
-
-        bottom:10px;
-
-        font-size:11px;
-    }
-
-
-    /* SWAP BUTTON */
-
-    .swap-btn{
-
-        width:55px;
-
-        height:55px;
-
-        min-width:55px;
-
-        min-height:55px;
-
-        margin-top:170px;
-
-        flex-shrink:0;
-
-        font-size:24px;
-    }
-
-
-    /* TRANSLATE BUTTON */
-
-    .translate-area{
-
-        margin-top:18px;
-    }
-
-    .translate-btn{
-
-        width:100%;
-
-        height:58px;
-
-        font-size:22px;
-
-        border-radius:18px;
-    }
-
-
-    /* BOTTOM BUTTONS */
-
-    .bottom-buttons{
-
-        display:grid;
-
-        grid-template-columns:1fr 1fr;
-
-        gap:10px;
-
-        margin-top:18px;
-    }
-
-    .bottom-buttons button{
-
-        width:100%;
-
-        height:52px;
-
-        font-size:14px;
-
-        border-radius:14px;
-    }
-
-
-    /* POWERED */
-
-    .powered{
-
-        margin-top:20px;
-
-        padding:16px;
-
-        border-radius:18px;
-    }
-
-    .powered-left{
-
-        display:flex;
-
-        align-items:flex-start;
-
-        gap:12px;
-    }
-
-    .ai-box{
-
-        width:48px;
-
-        height:48px;
-
-        font-size:20px;
-    }
-
-    .powered h2{
-
-        font-size:22px;
-    }
-
-    .powered p{
-
-        font-size:13px;
-
-        line-height:1.5;
-    }
+    padding:4px 8px;
 }
