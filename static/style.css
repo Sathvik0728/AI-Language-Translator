@@ -822,8 +822,8 @@ textarea{
 
     font-size:14px;
 
-    padding:14px;
-
+    padding:50px 14px 14px 14px;
+    
     line-height:1.4;
 }
 
@@ -872,15 +872,21 @@ textarea{
 }
 
 
-/* RIGHT ACTIONS */
+/* RIGHT ACTION BUTTONS */
 
 .right-actions{
+
+    position:absolute;
 
     top:8px;
 
     right:8px;
 
-    gap:4px;
+    display:flex;
+
+    gap:5px;
+
+    z-index:10;
 }
 
 .right-actions button{
@@ -892,6 +898,8 @@ textarea{
     font-size:12px;
 
     padding:0;
+
+    border-radius:10px;
 }
 
 
