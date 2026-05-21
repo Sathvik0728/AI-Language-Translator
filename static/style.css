@@ -667,7 +667,9 @@ textarea::placeholder{
 
 
 
-/* MOBILE */
+/* ======================================== */
+/* MOBILE VIEW FIX */
+/* ======================================== */
 
 @media screen and (max-width:768px){
 
@@ -684,20 +686,18 @@ textarea::placeholder{
 
         padding:16px;
 
-        border-radius:18px;
+        border-radius:20px;
     }
 
     /* HEADER */
 
     .header{
 
-        display:flex;
-
         flex-direction:column;
 
         align-items:flex-start;
 
-        gap:14px;
+        gap:18px;
     }
 
     .header-left{
@@ -706,21 +706,19 @@ textarea::placeholder{
 
         align-items:center;
 
-        gap:12px;
+        gap:14px;
     }
 
     .logo{
 
-        width:52px;
-
-        height:52px;
+        width:55px;
     }
 
     .header-left h1{
 
-        font-size:30px;
+        font-size:32px;
 
-        line-height:1.2;
+        line-height:1.1;
     }
 
     .header-left p{
@@ -734,154 +732,188 @@ textarea::placeholder{
 
         display:flex;
 
-        gap:10px;
+        gap:12px;
     }
 
     .top-btn{
 
         flex:1;
 
-        width:100%;
+        height:56px;
 
-        height:52px;
-
-        font-size:15px;
+        font-size:16px;
     }
 
-    /* KEEP DESKTOP STYLE */
+    /* TRANSLATOR */
 
     .translator{
 
         display:flex;
 
-        flex-direction:row;
+        flex-direction:column;
 
-        align-items:flex-start;
-
-        gap:12px;
+        gap:18px;
     }
 
     .card{
 
-        flex:1;
-
-        padding:14px;
-
-        border-radius:18px;
-    }
-
-    .card h3{
-
-        font-size:17px;
-    }
-
-    select{
-
-        height:50px;
-
-        font-size:16px;
-    }
-
-    textarea{
-
-        height:200px;
-
-        font-size:16px;
+        width:100%;
 
         padding:18px;
     }
 
-    .swap-btn{
+    .card h3{
 
-        width:55px;
+        font-size:18px;
 
-        height:55px;
+        margin-bottom:14px;
+    }
 
-        font-size:24px;
+    select{
 
-        margin-top:180px;
+        width:100%;
 
-        flex-shrink:0;
+        height:56px;
+
+        font-size:17px;
+    }
+
+    .textarea-box{
+
+        width:100%;
+
+        position:relative;
+    }
+
+    textarea{
+
+        width:100%;
+
+        height:240px;
+
+        font-size:18px;
+
+        padding:22px 18px;
+
+        border-radius:20px;
+    }
+
+    .clear-btn{
+
+        top:14px;
+
+        right:14px;
     }
 
     .right-actions{
 
-        top:12px;
+        position:absolute;
 
-        right:12px;
+        top:14px;
 
-        gap:6px;
+        right:14px;
+
+        display:flex;
+
+        gap:8px;
     }
 
     .right-actions button{
 
-        width:38px;
+        width:42px;
 
-        height:38px;
-
-        font-size:14px;
-    }
-
-    .mic-btn{
-
-        width:40px;
-
-        height:40px;
+        height:42px;
 
         font-size:16px;
     }
 
+    .mic-btn{
+
+        width:45px;
+
+        height:45px;
+
+        bottom:14px;
+
+        left:14px;
+    }
+
     .counter{
 
-        font-size:12px;
+        bottom:14px;
+
+        right:14px;
+
+        font-size:14px;
     }
 
     .translated{
 
-        font-size:12px;
+        left:14px;
+
+        bottom:14px;
+
+        font-size:13px;
     }
 
-    /* BUTTON */
+    /* SWAP */
+
+    .swap-btn{
+
+        width:65px;
+
+        height:65px;
+
+        margin:auto;
+
+        font-size:28px;
+    }
+
+    /* TRANSLATE */
 
     .translate-area{
 
-        margin:22px 0;
+        margin-top:22px;
     }
 
     .translate-btn{
 
         width:100%;
 
-        height:58px;
+        height:65px;
 
-        font-size:22px;
+        font-size:26px;
 
-        border-radius:16px;
+        border-radius:20px;
     }
 
     /* BOTTOM BUTTONS */
 
     .bottom-buttons{
 
-        display:flex;
+        display:grid;
 
-        flex-wrap:wrap;
+        grid-template-columns:1fr 1fr;
 
-        gap:10px;
+        gap:12px;
+
+        margin-top:22px;
     }
 
     .bottom-buttons button{
 
-        flex:1 1 45%;
+        width:100%;
 
-        height:54px;
+        height:58px;
 
-        font-size:14px;
+        font-size:16px;
     }
 
     /* POWERED */
 
     .powered{
+
+        margin-top:22px;
 
         padding:18px;
     }
@@ -890,25 +922,29 @@ textarea::placeholder{
 
         display:flex;
 
-        align-items:center;
+        align-items:flex-start;
 
-        gap:12px;
+        gap:14px;
     }
 
     .ai-box{
 
-        width:50px;
+        width:55px;
 
-        height:50px;
+        height:55px;
+
+        font-size:22px;
     }
 
     .powered h2{
 
-        font-size:22px;
+        font-size:24px;
     }
 
     .powered p{
 
         font-size:14px;
+
+        line-height:1.5;
     }
 }
